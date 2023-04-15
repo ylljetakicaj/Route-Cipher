@@ -14,3 +14,8 @@ void enkripto(string& plaintext, string& ciphertext, int key) {
 
    
 }
+
+void decrypt(string& plaintext, string& ciphertext, int key){
+    int gjatesia_ciphertext = ciphertext.length();
+    int rreshta = (gjatesia_ciphertext + key - 1)/key;
+}
