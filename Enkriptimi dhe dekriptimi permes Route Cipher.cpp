@@ -29,8 +29,16 @@ void enkripto(string& plaintext, string& ciphertext, int key) {
 }
 
 void decrypt(string& plaintext, string& ciphertext, int key){
+    
     int gjatesia_ciphertext = ciphertext.length();
     int rreshta = (gjatesia_ciphertext + key - 1)/key;
+
+    int extra = rreshta * key - gjatesia_ciphertext;
+    if (extra > 0) {
+        for (int i = 0; i < extra; i++) {
+            ciphertext += 'X';
+        }
+    }
 }
 
 int main() {
