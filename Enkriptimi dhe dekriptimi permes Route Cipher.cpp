@@ -32,3 +32,12 @@ void decrypt(string& plaintext, string& ciphertext, int key){
     int gjatesia_ciphertext = ciphertext.length();
     int rreshta = (gjatesia_ciphertext + key - 1)/key;
 }
+
+int main() {
+	string plaintext = "Kyprogramkametefunksionu";
+	string ciphertext = "";
+	int key = 4;
+	
+	enkripto(plaintext, ciphertext, key);
+	cout << "Teksti i enkriptuar: " << ciphertext << endl;
+}
