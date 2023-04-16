@@ -1,7 +1,12 @@
 # Route-Cipher
 
-A route cipher is a type of encryption technique that rearranges plaintext in a specific pattern to create a ciphertext. This technique involves writing the plaintext in a grid or matrix, and then rearranging the letters in a specific way, typically by reading the letters in a predetermined pattern or route.
+Detyra e dyte ne kuader te lendes "Siguria e te dhenave" ne Fakultetin e Inxhinierise Elektrike dhe Kompjuterike - FIEK
 
+Route Cipher është një lloj teknikë enkriptimi që riorganizon tekstin e thjeshtë në një model specifik për të krijuar një tekst shifror. Kjo teknikë përfshin shkrimin e tekstit të thjeshtë në një rrjet koordinativ ose matricë, dhe më pas riorganizimin e shkronjave në një mënyrë specifike, zakonisht duke lexuar shkronjat në një model ose rrugë të paracaktuar.
+
+Ne kete rast kemi implementuar funksionin per enkriptim dhe dekriptim te tekstit permes Route Cipher me ane te gjuhes programuese C++.
+
+Grupi 21
 
 - [Gentrit Ademi](https://github.com/GentritAdemi)
 - [Getuar Kelmendi](https://github.com/geti0)
