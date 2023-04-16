@@ -45,7 +45,7 @@ void decrypt(string& plaintext, string& ciphertext, int key){
     char table[rreshta][key];
     int index = 0;
     for (int i = 0; i < key; i++) {
-        for (int j = 0; j < row; j++) {
+        for (int j = 0; j < rreshta; j++) {
             table[j][i] = ciphertext[index];
             index++;
         }
@@ -53,7 +53,7 @@ void decrypt(string& plaintext, string& ciphertext, int key){
     
     // read plaintext from table
     plaintext = "";
-	for (int i = 0; i < row; i++) {
+	for (int i = 0; i < rreshta; i++) {
 		for (int j = 0; j < key; j++){
 			plaintext += table[i][j];
 		}
