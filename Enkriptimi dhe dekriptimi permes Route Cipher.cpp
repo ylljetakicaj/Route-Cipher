@@ -31,12 +31,23 @@ void enkripto(string& plaintext, string& ciphertext, int key) {
 void decrypt(string& plaintext, string& ciphertext, int key){
     
     int gjatesia_ciphertext = ciphertext.length();
-    int rreshta = (gjatesia_ciphertext + key - 1)/key;
+    int rreshta = (gjatesia_ciphertext + key - 1)/key; // calculate number of rows
 
+    // pad ciphertext with 'X' characters if necessary
     int extra = rreshta * key - gjatesia_ciphertext;
     if (extra > 0) {
         for (int i = 0; i < extra; i++) {
             ciphertext += 'X';
+        }
+    }
+
+    // build decryption table
+    char table[row][key];
+    int index = 0;
+    for (int i = 0; i < key; i++) {
+        for (int j = 0; j < row; j++) {
+            table[j][i] = ciphertext[index];
+            index++;
         }
     }
 }
