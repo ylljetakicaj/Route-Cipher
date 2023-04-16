@@ -50,6 +50,17 @@ void decrypt(string& plaintext, string& ciphertext, int key){
             index++;
         }
     }
+    
+    plaintext = "";
+	for (int i = 0; i < row; i++) {
+		for (int j = 0; j < key; j++){
+			plaintext += table[i][j];
+		}
+	}
+	
+    if (extra > 0) {
+	    plaintext.erase(len);
+    }
 }
 
 int main() {
