@@ -51,6 +51,7 @@ void decrypt(string& plaintext, string& ciphertext, int key){
         }
     }
     
+    // read plaintext from table
     plaintext = "";
 	for (int i = 0; i < row; i++) {
 		for (int j = 0; j < key; j++){
@@ -58,6 +59,7 @@ void decrypt(string& plaintext, string& ciphertext, int key){
 		}
 	}
 	
+    // remove trailing 'X' characters if necessary
     if (extra > 0) {
 	    plaintext.erase(len);
     }
@@ -70,4 +72,10 @@ int main() {
 	
 	enkripto(plaintext, ciphertext, key);
 	cout << "Teksti i enkriptuar: " << ciphertext << endl;
+	
+	string decryptedText = "";
+        decrypt(decryptedText, ciphertext, key);
+        cout << "Teksti i dekriptuar:  " << decryptedText << endl;
+
+    return 0;
 }
