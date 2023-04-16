@@ -42,7 +42,7 @@ void decrypt(string& plaintext, string& ciphertext, int key){
     }
 
     // build decryption table
-    char table[row][key];
+    char table[rreshta][key];
     int index = 0;
     for (int i = 0; i < key; i++) {
         for (int j = 0; j < row; j++) {
@@ -61,7 +61,7 @@ void decrypt(string& plaintext, string& ciphertext, int key){
 	
     // remove trailing 'X' characters if necessary
     if (extra > 0) {
-	    plaintext.erase(len);
+	    plaintext.erase(gjatesia_ciphertext);
     }
 }
 
